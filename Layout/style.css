@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-bottom: 40px;
+    height: 50px;
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    width: 243px;
+}
+
+.header-menu {
+    color: #292F36;
+    size: 20px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    height: 758px;
+    background-image: url(./img/banner.jpg);
+    border-radius: 70px;
+    margin-bottom: 91px;
+}
+
+.banner-content {
+    width: 434px;
+}
+
+.banner-title {
+    font-family: "DM Serif Display", serif;
+    color: #292F36;
+    font-size: 65px;
+    margin-bottom: 21px;
+}
+
+.banner-text {
+    font-size: 22px;
+    margin-bottom: 21px;
+}
+
+.banner-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220.14px;
+    height: 75px;
+    border-radius: 18px;
+    gap: 10px;
+    background: #292F36;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.project {
+    margin-bottom: 95px;
+}
+
+.project-heading {
+    width: 737px;
+    margin-bottom: 93px;
+}
+
+.heading-top {
+    display: flex;
+    justify-content: center;
+}
+
+.project-heading__title {
+    font-family: "DM Serif Display", serif;
+    color: #292F36;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.project-heading__text {
+    font-size: 22px;
+    text-align: center;
+}
+
+.project-cart__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 525px;
+}
+
+.project-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+    grid-gap: 34px 96px;
+}
+
+.project-image {
+    width: 525px;
+    height: 548px;
+}
+
+.img-one {
+    border-top-right-radius: 18%;
+}
+
+.img-two {
+    border-top-left-radius: 18%;
+}
+
+.img-three {
+    border-bottom-right-radius: 18%;
+}
+
+.img-four {
+    border-bottom-left-radius: 18%;
+}
+
+.project-name {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    color: #292F36;
+}
+
+.project-desc {
+    font-size: 22px;
+    color: #292F36;
+}
+
+.project-cart__button {
+    display: inline-block;
+    padding: 26px 35px;
+    border-radius: 50px;
+    background-color: #F4F0EC;
+}
+
+.project-cart__button:hover {
+    border: 3px solid #292f36;
+}
+
+.counter {
+    display: flex;
+    background: #F4F0EC;
+    height: 457px;
+    margin-bottom: 100px;
+}
+
+.counter-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.years, .success, .activ, .happy {
+    text-align: center;
+}
+
+.counter-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 85px;
+    color: #CDA274;
+}
+
+.counter-text {
+    font-size: 22px;
+    color: #4D5053;
+}
+
+.articles {
+    margin-bottom: 100px;
+}
+
+.articles-heading {
+    display: flex;
+    flex-direction: column;
+    width: 811px;
+    padding-bottom: 50px;
+}
+
+.articles-heading__title {
+    font-family: "DM Serif Display", serif;
+    font-size: 50px;
+    color: #292F36;
+    text-align: center;
+}
+
+.articles-heading__text {
+    font-size: 22px;
+    color: #4D5053;
+    text-align: center;
+}
+
+.articles__carts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 27px;
+}
+
+.articles__pik {
+    border-radius: 13% 13% 0 0;
+}
+
+.articles__cart {
+    border: 1px solid #e7e7e7;
+    border-radius: 62px;
+    width: 382px;
+    height: 521px;
+    position: relative;
+}
+
+.articles__img {
+    margin-bottom: 12px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.articles__bg {
+    display: block;
+    padding: 4px;
+    border-radius: 8px 8px 8px 0;
+    background: #fff;
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.articles__subtitle {
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    color: #292F36;
+    width: 305px;
+    height: 70px;
+    margin-left: 20px;
+    margin-bottom: 33px;
+}
+
+.articles__ellipse-text {
+    display: flex;
+    margin-left: 20px;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articles__button {
+    display: inline-block;
+    padding: 18px 25px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+}
+
+.footer {
+    background: #fff;
+    padding-bottom: 134px;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 101px;
+}
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    margin-bottom: 18px;
+
+}
+
+.footer__logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__logo-pik {
+    padding: 8px 0;
+}
+
+.footer__title-logo {
+    color: #292f36;
+    font-family: 'DM Serif Display'sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.footer__text {
+    color: #4d5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 31px;
+}
+
+.footer__sociale {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+}
+
+.footer__pages {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title-pages {
+    color: #292f36;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    margin-bottom: 9px;
+}
+
+.footer__link-page {
+    color: #4d5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 300%;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title-contact {
+    color: #292f36;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    margin-bottom: 24px;
+}
+
+.footer__link-addres {
+    color: #4d5053;
+    margin-bottom: 35px;
+}
+
+.footer__link-email {
+    color: #4d5054;
+    margin-bottom: 35px;
+}
+
+.footer__link-phone {
+    color: #4d5053;
+}
+
+
+/* Blog */
+
+
+.banner-blog {
+    background-image: url(./img/banner_blog.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 356px;
+    margin-bottom: 180px;
+}
+
+.banner-blog__box {
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    border-radius: 37px 37px 0px 0px;
+    background: rgb(255, 255, 255);
+    padding: 41px 78px;
+    width: 503px;
+    min-height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxTitle {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 50px;
+    color: #292F36;
+}
+
+.boxText {
+    font-size: 22px;
+    color: #292F36;
+}
+
+.post {
+    margin-bottom: 150px;
+}
+
+.post-title {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 50px;
+    color: #292F36;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    display: flex;
+    border: 1px solid #e7e7e7;
+    border-radius: 62px;
+    min-height: 517px;
+}
+
+.post-left__img {
+    width: 569px;
+    height: 478px;
+    border-radius: 62px;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-right: 55px;
+}
+
+.post-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.post-content__title {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 25px;
+    color: #292F36;
+    width: 469px;
+}
+
+.post-content__text {
+    font-size: 22px;
+    color: #292F36;
+    width: 469px;
+}
+
+.post-content__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 489px;
+}
+
+.post-content__button {
+    display: inline-block;
+    padding: 18px 25px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+}
+
+.articles-heading__blog {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 18px 25px;
+    border-radius: 50%;
+    border: 1px solid #CDA274;
+    color: #292F36;
+    margin-right: 20px;
+}
+
+.pagination a:hover {
+    background-color: #F4F0EC;
+    border: 1px solid #F4F0EC;
+}
