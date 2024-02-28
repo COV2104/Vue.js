@@ -8,6 +8,7 @@ new Vue({
         description: "Kitchan Design",
         title: "Let’s Get Solution For Building Construction Work",
         date: "26 December,2022",
+        tags: "Kitchan",
       },
       {
         image: "./img/article_2.jpg",
@@ -15,6 +16,7 @@ new Vue({
         description: "Living Design",
         title: "Low Cost Latest Invented Interior Designing Ideas.",
         date: "22 December,2022",
+        tags: "Bedroom",
       },
       {
         image: "./img/article_3.jpg",
@@ -22,6 +24,7 @@ new Vue({
         description: "Interior Design",
         title: "Best For Any Office [&] Business Interior Solution",
         date: "25 December,2022",
+        tags: "Building",
       },
       {
         image: "./img/article_4.jpg",
@@ -29,6 +32,7 @@ new Vue({
         description: "Kitchan Design",
         title: "Let’s Get Solution For Building Construction Work",
         date: "26 December,2022",
+        tags: "Kitchen Planning",
       },
       {
         image: "./img/article_5.jpg",
@@ -36,6 +40,7 @@ new Vue({
         description: "Living Design",
         title: "Low Cost Latest Invented Interior Designing Ideas.",
         date: "22 December,2022",
+        tags: "Architecture",
       },
       {
         image: "./img/article_6.jpg",
@@ -43,7 +48,16 @@ new Vue({
         description: "Interior Design",
         title: "Best For Any Office [&] Business Interior Solution",
         date: "25 December,2022",
+        tags: "Building",
       },
     ],
+    filteredArticles: [], 
+  },
+  methods: {
+    filterByTag: function (tag) {
+      this.filteredArticles = this.blogItems.filter((article) =>
+        article.tags.includes(tag)
+      );
+    },
   },
 });

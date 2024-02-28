@@ -241,6 +241,14 @@ ul {
     position: relative;
 }
 
+.articles__cart:hover {
+    background-color: #F4F0EC;
+
+    .articles__button {
+        background-color: #ffffff;
+    }
+}
+
 .articles__img {
     margin-bottom: 12px;
     margin-left: 20px;
@@ -511,4 +519,214 @@ ul {
 .pagination a:hover {
     background-color: #F4F0EC;
     border: 1px solid #F4F0EC;
+}
+
+/* Details */
+
+.banner-details {
+    background-image: url(./img/banner_details.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 351px;
+    margin-bottom: 200px;
+}
+
+.details {
+    padding-top: 200px;
+    padding-bottom: 96px;
+}
+
+.content__wrepp {
+    display: grid;
+    grid-template-columns: repeat(2, 799px 345px);
+    gap: 52px;
+}
+
+.sub__content {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 799px; */
+}
+
+.sub__title {
+    color: rgb(41, 47, 54);
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+.details__img {
+    border-radius: 50px;
+    background: rgb(196, 196, 196);
+    margin-bottom: 46px;
+}
+
+.date__details {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+.details__desc {
+    padding-right: 409px;
+}
+
+.details__link {
+    color: rgb(77, 80, 83);
+    font-family: 'Jost', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-right: 5px;
+}
+
+.details__link:last-child {
+    margin-right: 0;
+}
+
+.details__text {
+    color: rgb(77, 80, 83);
+    font-family: 'Jost', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.details__quotes {
+    border-radius: 50px;
+    background: rgb(244, 240, 236);
+    padding: 53px 227px;
+    margin-bottom: 27px;
+    /* width: 799px;
+    height: 267px; */
+}
+
+.details__quotes-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.details__quotes-title {
+    max-height: 133px;
+    color: rgb(205, 162, 116);
+    font-family: 'DM Serif Display', sans-serif;
+    font-style: italic;
+    font-size: 200px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+}
+
+.details__quotes-text {
+    color: rgb(205, 162, 116);
+    font-family: 'DM Serif Display', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+}
+
+.details__quotes-subtitle {
+    color: rgb(41, 47, 54);
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+    margin-bottom: 27px;
+}
+
+.details__quotes-desc {
+    color: rgb(77, 80, 83);
+    font-family: 'Jost', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.details__discription {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.details__discription-number {
+    color: rgb(205, 162, 116);
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+}
+
+.details__discription-info {
+    color: rgb(77, 80, 83);
+    font-family: 'Jost', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.details__image {
+    border-radius: 50px;
+    background: rgb(196, 196, 196);
+    margin-bottom: 35px;
+}
+
+.details__quotes-dsc {
+    color: rgb(77, 80, 83);
+    font-family: 'Jost', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.form__title {
+    color: rgb(41, 47, 54);
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.form__radio-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.tags__input {
+    border-radius: 10px;
+    background: rgb(244, 240, 236);
+    padding: 9px 30px;
+    color: rgb(41, 47, 54);
+    font-family: 'Jost', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+}
+
+.tags__input:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(41, 47, 54);
+}
+
+.articles__down{
+    margin-bottom: 50px;
 }

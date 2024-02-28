@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,163 +30,141 @@
         </div>
       </header>
 
-      <section class="banner center">
-        <div class="banner-content">
-          <p class="banner-title">Let Your Home Be Unique</p>
-          <p class="banner-text">
-            There are many variations of the passages of lorem Ipsum
-            fromavailable, majority.
-          </p>
-          <button class="banner-button">
-            Get Started <img src="./img/Vector.svg" alt="vector" />
-          </button>
-        </div>
-      </section>
+      <div class="banner-details"></div>
 
-      <section class="project center">
-        <div class="heading-top">
-          <div class="project-heading">
-            <p class="project-heading__title">Follow Our Projects</p>
-            <p class="project-heading__text">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of page lookings at its layouts points.
+      <section class="details center">
+        <div class="content__wrepp">
+          <div class="sub__content">
+            <p class="sub__title">
+              Let’s Get Solution for Building Construction Work
+            </p>
+            <img
+              class="details__img"
+              width="799"
+              height="539"
+              src="./img/details_blog_1.jpg"
+              alt="Let’s Get Solution for Building
+                              Construction Work"
+            />
+            <div class="date__details">
+              <p class="details__desc">26 December,2022</p>
+              <a href="" class="details__link">Interior /</a>
+              <a href="./index.html" class="details__link">Home /</a>
+              <a href="" class="details__link">Decore</a>
+            </div>
+            <p class="details__text">
+              Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+              turpmaximus.posuere in.Contrary to popular belief.There are many
+              variations of passages of Lorem Ipsum available, but the majority
+              have suffered alteration in some form, by injecthumour, or
+              randomised words which don't look even slightly believable.<br /><br />
+              Embarrassing hidden in the middle of text. All the Lorem Ipsum
+              generators on the Internet tend to repeat predefined chunks as
+              necessary.
+            </p>
+            <div class="details__quotes">
+              <div class="details__quotes-content">
+                <p class="details__quotes-title">&rdquo;</p>
+                <p class="details__quotes-text">
+                  The details are not the details. They make the design.
+                </p>
+              </div>
+            </div>
+            <p class="details__quotes-subtitle">Design sprints are great</p>
+            <p class="details__quotes-desc">
+              Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+              turpmaximus.posuere in.Contrary to popular belief.There are many
+              variations of passages of Lorem Ipsum available, but the majority
+              have suffered.
+            </p>
+            <div class="details__discription">
+              <p class="details__discription-number">1</p>
+              <p class="details__discription-info">
+                Contrary to popular belief.There are many variations of passages
+                of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+
+            <div class="details__discription">
+              <p class="details__discription-number">2</p>
+              <p class="details__discription-info">
+                Contrary to popular belief.There are many variations of passages
+                of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+
+            <div class="details__discription">
+              <p class="details__discription-number">3</p>
+              <p class="details__discription-info">
+                Contrary to popular belief.There are many variations of passages
+                of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+
+            <img
+              class="details__image"
+              width="799"
+              height="365"
+              src="./img/details_blog_2.jpg"
+              alt="Design sprints are great"
+            />
+
+            <p class="details__quotes-dsc">
+              Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+              turpmaximus.posuere in.Contrary to popular belief.There are many
+              variations of passages of Lorem Ipsum available, but the majority
+              have suffered.
             </p>
           </div>
-        </div>
 
-        <div class="project-projects">
-          <div class="project_cart">
-            <img
-              class="project-image img-one"
-              src="./img/project_1.jpg"
-              alt="image project"
-            />
-            <div class="project-cart__content">
-              <div class="project-cart__left">
-                <p class="project-name">Modern Kitchan</p>
-                <p class="project-desc">Decor / Artchitecture</p>
-              </div>
-              <div class="project-cart__right">
-                <a href="#" class="project-cart__button"
-                  ><img src="./img/Vector_project.svg" alt="vector"
-                /></a>
-              </div>
+          <div class="details__tags">
+            <p class="form__title">Tags</p>
+
+            <div class="form__radio-wrapper">
+              <a href="#" class="tags__input" @click="filterByTag('Kitchen')"
+                >Kitchen</a
+              >
+              <a href="#" class="tags__input" @click="filterByTag('Bedroom')"
+                >Bedroom</a
+              >
+              <a href="#" class="tags__input" @click="filterByTag('Building')"
+                >Building</a
+              >
+              <a
+                href="#"
+                class="tags__input"
+                @click="filterByTag('Architecture')"
+                >Architecture</a
+              >
+              <a
+                href="#"
+                class="tags__input"
+                @click="filterByTag('Kitchen Planning')"
+                >Kitchen Planning</a
+              >
+              <a href="#" class="tags__input" @click="filterByTag('Bedroom')"
+                >Bedroom</a
+              >
             </div>
-          </div>
 
-          <div class="project_cart">
-            <img
-              class="project-image img-two"
-              src="./img/project_2.jpg"
-              alt="image project"
-            />
-            <div class="project-cart__content">
-              <div class="project-cart__left">
-                <p class="project-name">Modern Kitchan</p>
-                <p class="project-desc">Decor / Artchitecture</p>
-              </div>
-              <div class="project-cart__right">
-                <a href="#" class="project-cart__button"
-                  ><img src="./img/Vector_project.svg" alt="vector"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_cart">
-            <img
-              class="project-image img-three"
-              src="./img/project_3.jpg"
-              alt="image project"
-            />
-            <div class="project-cart__content">
-              <div class="project-cart__left">
-                <p class="project-name">Modern Kitchan</p>
-                <p class="project-desc">Decor / Artchitecture</p>
-              </div>
-              <div class="project-cart__right">
-                <a href="#" class="project-cart__button"
-                  ><img src="./img/Vector_project.svg" alt="vector"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project_cart">
-            <img
-              class="project-image img-four"
-              src="./img/project_4.jpg"
-              alt="image project"
-            />
-            <div class="project-cart__content">
-              <div class="project-cart__left">
-                <p class="project-name">Modern Kitchan</p>
-                <p class="project-desc">Decor / Artchitecture</p>
-              </div>
-              <div class="project-cart__right">
-                <a href="#" class="project-cart__button"
-                  ><img src="./img/Vector_project.svg" alt="vector"
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="counter">
-        <div class="counter-content center">
-          <div class="years">
-            <p class="counter-title">12</p>
-            <p class="counter-text">Years Of Experiance</p>
-          </div>
-          <img src="./img/counterLine.svg" alt="line" />
-          <div class="success">
-            <p class="counter-title">85</p>
-            <p class="counter-text">Success Project</p>
-          </div>
-          <img src="./img/counterLine.svg" alt="line" />
-          <div class="activ">
-            <p class="counter-title">15</p>
-            <p class="counter-text">Active Project</p>
-          </div>
-          <img src="./img/counterLine.svg" alt="line" />
-          <div class="happy">
-            <p class="counter-title">95</p>
-            <p class="counter-text">Happy CUstomers</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="articles center">
-        <div class="heading-top">
-          <div class="articles-heading">
-            <p class="articles-heading__title">Articles & News</p>
-            <p class="articles-heading__text">
-              It is a long established fact that a reader will be distracted by
-              the of readable content of a page when lookings at its layouts the
-              points of using.
-            </p>
-          </div>
-        </div>
-
-        <div class="articles__carts">
-          <div
-            class="articles__cart"
-            v-for="(item, index) in blogItems"
-            :key="index"
-            v-if="index < 3"
-          >
-            <div class="articles__img">
-              <img class="articles__pik" :src="item.image" :alt="item.alt" />
-            </div>
-            <div class="articles__bg">
-              <p class="articles__desc">{{item.description}}</p>
-            </div>
-            <p class="articles__subtitle">{{item.title}}</p>
-            <div class="articles__ellipse-text">
-              <p class="articles__date">{{item.date}}</p>
-              <div class="articles__button">
-                <img src="img/Vector2.svg" alt="vector" />
+            <div class="articles ">
+              <div
+                class="articles__cart articles__down"
+                v-for="(item, index) in filteredArticles"
+                :key="index">
+                <div class="articles__img">
+                  <img class="articles__pik" :src="item.image" :alt="item.alt" />
+                </div>
+                <div class="articles__bg">
+                  <p class="articles__desc">{{item.description}}</p>
+                </div>
+                <p class="articles__subtitle">{{item.title}}</p>
+                <div class="articles__ellipse-text">
+                  <p class="articles__date">{{item.date}}</p>
+                  <div class="articles__button">
+                    <img src="img/Vector2.svg" alt="vector" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -203,7 +181,9 @@
                   src="./img/Logo.svg"
                   alt="Логотип компании Interno"
                 />
-                <p class="footer__title-logo"><img src="./img/Interno.svg" alt="Interno"></p>
+                <p class="footer__title-logo">
+                  <img src="./img/Interno.svg" alt="Interno" />
+                </p>
               </a>
             </div>
             <p class="footer__text">
