@@ -6,7 +6,7 @@
         </div>
         <div class="header-right">
             <router-link to="/" class="header-menu">Home</router-link>
-            <a class="header-menu" href="#">Project</a>
+            <router-link to="/project" class="header-menu">Project</router-link>
             <router-link to="/blog" class="header-menu">Blog</router-link>
         </div>
     </header>

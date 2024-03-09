@@ -41,7 +41,7 @@
                             <router-link to="/" class="footer__link-page">Home</router-link>
                         </li>
                         <li class="footer__item-page">
-                            <a href="#" class="footer__link-page">Project</a>
+                            <router-link to="/project" class="footer__link-page">Project</router-link>
                         </li>
                         <li class="footer__item-page">
                             <router-link to="/blog" class="footer__link-page">Blog</router-link>

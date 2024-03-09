@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BlogView from '../views/BlogView.vue'
 import DetailsView from '../views/DetailsView.vue'
+import ProjectView from '../views/ProjectView.vue'
+
 Vue.use(VueRouter)
 const routes = [
   {
@@ -19,8 +21,14 @@ const routes = [
     path: '/details',
     name: 'Details',
     component: DetailsView
+  },
+  {
+    path: '/project',
+    name: 'Project',
+    component: ProjectView
   }
 ]
+
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
