@@ -77,12 +77,12 @@
                 <p class="form__title">Tags</p>
 
                 <div class="form__radio-wrapper">
-                    <a href="#" class="tags__input" @click="filterByTag('Kitchen')">Kitchen</a>
-                    <a href="#" class="tags__input" @click="filterByTag('Bedroom')">Bedroom</a>
-                    <a href="#" class="tags__input" @click="filterByTag('Building')">Building</a>
-                    <a href="#" class="tags__input" @click="filterByTag('Architecture')">Architecture</a>
-                    <a href="#" class="tags__input" @click="filterByTag('Kitchen Planning')">Kitchen Planning</a>
-                    <a href="#" class="tags__input" @click="filterByTag('Bedroom')">Bedroom</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Kitchen')">Kitchen</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Bedroom')">Bedroom</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Building')">Building</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Architecture')">Architecture</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Kitchen Planning')">Kitchen Planning</a>
+                    <a href="#" class="tags__input" @click="FILTER_BY_TAG('Bedroom')">Bedroom</a>
                 </div>
 
                 <div class="articles ">
@@ -108,71 +108,16 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            blogItems: [
-                {
-                    image: require("@/assets/article_1.jpg"),
-                    alt: "Kitchan Design",
-                    description: "Kitchan Design",
-                    title: "Let’s Get Solution For Building Construction Work",
-                    date: "26 December,2022",
-                    tags: "Kitchan",
-                },
-                {
-                    image: require("@/assets/article_2.jpg"),
-                    alt: "Living Design",
-                    description: "Living Design",
-                    title: "Low Cost Latest Invented Interior Designing Ideas.",
-                    date: "22 December,2022",
-                    tags: "Bedroom",
-                },
-                {
-                    image: require("@/assets/article_3.jpg"),
-                    alt: "Interior Design",
-                    description: "Interior Design",
-                    title: "Best For Any Office [&] Business Interior Solution",
-                    date: "25 December,2022",
-                    tags: "Building",
-                },
-                {
-                    image: require("@/assets/article_4.jpg"),
-                    alt: "Kitchan Design",
-                    description: "Kitchan Design",
-                    title: "Let’s Get Solution For Building Construction Work",
-                    date: "26 December,2022",
-                    tags: "Kitchen Planning",
-                },
-                {
-                    image: require("@/assets/article_5.jpg"),
-                    alt: "Living Design",
-                    description: "Living Design",
-                    title: "Low Cost Latest Invented Interior Designing Ideas.",
-                    date: "22 December,2022",
-                    tags: "Architecture",
-                },
-                {
-                    image: require("@/assets/article_6.jpg"),
-                    alt: "Interior Design",
-                    description: "Interior Design",
-                    title: "Best For Any Office [&] Business Interior Solution",
-                    date: "25 December,2022",
-                    tags: "Building",
-                },
-            ],
-            filteredArticles: [],
-        };
-    },
-    methods: {
-        filterByTag: function (tag) {
-            this.filteredArticles = this.blogItems.filter((article) =>
-                article.tags.includes(tag)
-            );
-        },
-    },
-};
+import { mapState, mapMutations } from 'vuex';
 
+export default {
+  computed: {
+    ...mapState(['filteredArticles'])
+  },
+  methods: {
+    ...mapMutations(['FILTER_BY_TAG'])
+  }
+}
 </script>
 
 <style lang="css">

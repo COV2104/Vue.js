@@ -32,63 +32,13 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            blogItems: [
-                {
-                    image: require("@/assets/article_1.jpg"),
-                    alt: "Kitchan Design",
-                    description: "Kitchan Design",
-                    title: "Let’s Get Solution For Building Construction Work",
-                    date: "26 December,2022",
-                    tags: "Kitchan",
-                },
-                {
-                    image: require("@/assets/article_2.jpg"),
-                    alt: "Living Design",
-                    description: "Living Design",
-                    title: "Low Cost Latest Invented Interior Designing Ideas.",
-                    date: "22 December,2022",
-                    tags: "Bedroom",
-                },
-                {
-                    image: require("@/assets/article_3.jpg"),
-                    alt: "Interior Design",
-                    description: "Interior Design",
-                    title: "Best For Any Office [&] Business Interior Solution",
-                    date: "25 December,2022",
-                    tags: "Building",
-                },
-                {
-                    image: require("@/assets/article_4.jpg"),
-                    alt: "Kitchan Design",
-                    description: "Kitchan Design",
-                    title: "Let’s Get Solution For Building Construction Work",
-                    date: "26 December,2022",
-                    tags: "Kitchen Planning",
-                },
-                {
-                    image: require("@/assets/article_5.jpg"),
-                    alt: "Living Design",
-                    description: "Living Design",
-                    title: "Low Cost Latest Invented Interior Designing Ideas.",
-                    date: "22 December,2022",
-                    tags: "Architecture",
-                },
-                {
-                    image: require("@/assets/article_6.jpg"),
-                    alt: "Interior Design",
-                    description: "Interior Design",
-                    title: "Best For Any Office [&] Business Interior Solution",
-                    date: "25 December,2022",
-                    tags: "Building",
-                },
-            ]
-        };
-    }
-};
+import { mapState } from 'vuex';
 
+export default {
+    computed: {
+        ...mapState(['blogItems'])
+    }
+}
 </script>
 
 <style lang="css">

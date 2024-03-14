@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import BlogView from '../views/BlogView.vue'
 import DetailsView from '../views/DetailsView.vue'
 import ProjectView from '../views/ProjectView.vue'
+import ProjectDetailsView from '@/views/ProjectDetailsView.vue'
 
 Vue.use(VueRouter)
 const routes = [
@@ -26,6 +27,11 @@ const routes = [
     path: '/project',
     name: 'Project',
     component: ProjectView
+  },
+  {
+    path: '/projectDetails',
+    name: 'ProjectDetails',
+    component: ProjectDetailsView
   }
 ]
 

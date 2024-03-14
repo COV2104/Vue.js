@@ -32,40 +32,17 @@
 </template>
 
 <script>
-export default {
-    data() {
-        return {
-            blogItems: [
-                {
-                    image: require("@/assets/article_1.jpg"),
-                    alt: "Kitchan Design",
-                    description: "Kitchan Design",
-                    title: "Let’s Get Solution For Building Construction Work",
-                    date: "26 December,2022",
-                    tags: "Kitchan",
-                },
-                {
-                    image: require("@/assets/article_2.jpg"),
-                    alt: "Living Design",
-                    description: "Living Design",
-                    title: "Low Cost Latest Invented Interior Designing Ideas.",
-                    date: "22 December,2022",
-                    tags: "Bedroom",
-                },
-                {
-                    image: require("@/assets/article_3.jpg"),
-                    alt: "Interior Design",
-                    description: "Interior Design",
-                    title: "Best For Any Office [&] Business Interior Solution",
-                    date: "25 December,2022",
-                    tags: "Building",
-                }
-            ]
-        };
-    }
-};
+import { mapState } from 'vuex';
 
+export default {
+    computed: {
+        ...mapState({
+            blogItems: state => state.blogItems.slice(0, 3) 
+        })
+    }
+}
 </script>
+
 
 <style lang="css">
 * {
@@ -89,7 +66,7 @@ a {
     font-family: "Jost", sans-serif;
 }
 
-.heading-top{
+.heading-top {
     display: flex;
     justify-content: center;
 }

@@ -4,16 +4,16 @@
             <nav class="project__nav">
                 <ul class="project__items">
                     <li class="project__item">
-                        <a href="#" class="project__link-content" @click="showProjects('Bathroom')">Bathroom</a>
+                        <a href="#" class="project__link-content" @click="SHOW_PROJECTS('Bathroom')">Bathroom</a>
                     </li>
                     <li class="project__item">
-                        <a href="#" class="project__link-content " @click="showProjects('Bed Room')">Bed Room</a>
+                        <a href="#" class="project__link-content " @click="SHOW_PROJECTS('Bed Room')">Bed Room</a>
                     </li>
                     <li class="project__item">
-                        <a href="#" class="project__link-content" @click="showProjects('Kitchen')">Kitchen</a>
+                        <a href="#" class="project__link-content" @click="SHOW_PROJECTS('Kitchen')">Kitchen</a>
                     </li>
                     <li class="project__item">
-                        <a href="#" class="project__link-content" @click="showProjects('Living Area')">Living Area</a>
+                        <a href="#" class="project__link-content" @click="SHOW_PROJECTS('Living Area')">Living Area</a>
                     </li>
                 </ul>
             </nav>
@@ -44,213 +44,18 @@
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from 'vuex';
+
 export default {
-    data() {
-        return {
-            projects: [
-                {
-                    image: require("@/assets/Project_1.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_2.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_3.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_4.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_5.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_6.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_7.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/Project_8.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bed Room',
-                },
-                {
-                    image: require("@/assets/bathroom_1.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_2.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_3.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_4.jpeg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_5.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_6.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_7.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/bathroom_8.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Bathroom',
-                },
-                {
-                    image: require("@/assets/kitchen_1.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_2.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_3.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_4.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_5.png"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_6.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_7.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/kitchen_8.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Kitchen',
-                },
-                {
-                    image: require("@/assets/LivingArea_1.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_2.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_3.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_4.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_5.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_6.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_7.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-                {
-                    image: require("@/assets/LivingArea_8.jpg"),
-                    title: 'Classic Minimal Bedroom',
-                    category: 'Decor / Artchitecture',
-                    select: 'Living Area',
-                },
-            ],
-            selectedProjects: []
-        };
+    computed: {
+        ...mapState(['selectedProjects'])
     },
     methods: {
-        showProjects(select) {
-            this.selectedProjects = this.projects.filter(project => project.select === select);
-        }
+        ...mapMutations(['SHOW_PROJECTS']),
+        ...mapActions(['loadProjects'])
     },
     mounted() {
-        this.showProjects('Bed Room');
+        this.loadProjects('Bed Room');
     }
 };
 </script>
