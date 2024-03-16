@@ -19,10 +19,9 @@
             </nav>
         </div>
 
-        <div class="project__boxes-star">
-
+        <div class="project__boxes">
             <div class="project__box" v-for="project in selectedProjects" :key="project.title">
-                <img class="project__img-star" width="585" height="522" :src="project.image" :alt="project.title" />
+                <img class="project__img" width="585" :src="project.image" :alt="project.title" />
                 <div class="project__subcontent">
                     <div class="project__decor">
                         <h3 class="project__subtitle">{{ project.title }}</h3>
@@ -31,7 +30,6 @@
                     <a href="#" class="project__ellipse ellipse"></a>
                 </div>
             </div>
-
         </div>
 
         <div class="pagination">
@@ -83,38 +81,10 @@ a {
     font-family: "Jost", sans-serif;
 }
 
-.project__title {
-    color: rgb(41, 47, 54);
-    font-family: 'DM Serif Display', sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 125%;
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.project__text {
-    color: rgb(77, 80, 83);
-    font-family: 'Jost', serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 93px;
-    padding-right: 232px;
-    padding-left: 232px;
-}
-
 .project__boxes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 104px;
-}
-
-.project__img {
-    border-radius: 0px 80px 0px 0px;
-    background: rgb(196, 196, 196);
-    margin-bottom: 28px;
+    margin-bottom: 61px;
+    column-width: 14em;
+    column-count: 2;
 }
 
 .project__subcontent {
@@ -173,12 +143,14 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 27px;
+    border: 1px solid #CDA274;
+    border-radius: 18px;
 }
 
 .project__items {
     display: flex;
-    gap: 96px;
+    gap: 80px;
 }
 
 .project__item {
@@ -203,27 +175,19 @@ a {
     background: rgb(205, 162, 116);
 }
 
-.project__boxes-star {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-bottom: 61px;
-
-}
-
 .project__box {
-    width: 100%;
-    position: relative;
+    break-inside: avoid;
+    padding-bottom: 30px;
 }
 
-.project__img-star {
-    margin-bottom: 28px;
+.project__img{
+    margin-bottom: 20px;
 }
 
 .project__subcontent {
     display: flex;
     align-items: center;
-    gap: 298px;
+    gap: 229px;
 }
 
 .pagination {

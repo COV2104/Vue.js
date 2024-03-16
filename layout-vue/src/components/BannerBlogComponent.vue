@@ -42,7 +42,7 @@ a {
 
 .banner-blog__box {
     position: absolute;
-    left: 33%;
+    left: 36%;
     top: 50%;
     border-radius: 37px 37px 0px 0px;
     background: rgb(255, 255, 255);
